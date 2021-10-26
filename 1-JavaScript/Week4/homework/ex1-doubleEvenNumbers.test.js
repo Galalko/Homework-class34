@@ -9,17 +9,18 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 - Using the `map` and `filter` functions, rewrite the function body of
 `doubleEvenNumbers`.
 ------------------------------------------------------------------------------*/
-// ! Function to be tested
-function doubleEvenNumbers(numbers) {
-  // TODO rewrite the function body using `map` and `filter`.
-  const newNumbers = [];
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 === 0) {
-      newNumbers.push(numbers[i] * 2);
-    }
-  }
-  return newNumbers;
+
+function doubleEvenNumbers (numbers){
+  const newNumbers = numbers
+  .filter(newNumber=> newNumber % 2 ===0  )
+  .map(newNumber=> newNumber*2 
+
+  ) ;
+  return newNumbers
 }
+const theNumbers =[1, 2, 3, 4]
+console.log( doubleEvenNumbers(theNumbers))
+
 
 // ! Unit test (using Jest)
 test('doubleEvenNumbers should take the even numbers and double them', () => {

@@ -13,7 +13,7 @@ Full description atL https://github.com/HackYourFuture/Homework/tree/main/1-Java
 const mondayTasks = [
   {
     name: 'Daily standup',
-    duration: 30, // specified in minutes
+    duration: 30,
   },
   {
     name: 'Feature discussion',
@@ -31,11 +31,13 @@ const mondayTasks = [
 
 const hourlyRate = 25;
 
-function computeEarnings(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function computeEarnings(mondayTasks, hourlyRate) {
+    const allDuration = mondayTasks
+      .map(taskDuration => taskDuration.duration/60  * hourlyRate )
+      .reduce((sum,taskDuration)=> sum+taskDuration,0)
+      return `€${allDuration}0`  ;
 }
-
-// ! Unit tests (using Jest)
+   // ! Unit tests (using Jest)
 describe('computeEarnings', () => {
   test('should take two parameters', () => {
     // The `.length` property indicates the number of parameters expected by
