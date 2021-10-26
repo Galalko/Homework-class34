@@ -1,0 +1,36 @@
+2021-10-26 07:11:48 info: ------------------------------------------------------
+2021-10-26 07:11:48 info: >>> Running Unit Test `ex1-doubleEvenNumbers.test` <<<
+2021-10-26 07:11:48 info: ------------------------------------------------------
+2021-10-26 07:11:51 info: All unit tests passed.
+2021-10-26 07:11:53 info: All steps were completed successfully
+2021-10-26 07:13:07 info: -------------------------------------------------
+2021-10-26 07:13:07 info: >>> Running Unit Test `ex2-mondaysWorth.test` <<<
+2021-10-26 07:13:07 info: -------------------------------------------------
+2021-10-26 07:13:10 info: All unit tests passed.
+2021-10-26 07:13:12 info: All steps were completed successfully
+2021-10-26 07:13:25 info: -------------------------------------------------
+2021-10-26 07:13:25 info: >>> Running Unit Test `ex3-lemonAllergy.test` <<<
+2021-10-26 07:13:25 info: -------------------------------------------------
+2021-10-26 07:13:29 info: All unit tests passed.
+2021-10-26 07:13:32 info: All steps were completed successfully
+2021-10-26 07:13:41 info: ------------------------------------------
+2021-10-26 07:13:41 info: >>> Running Unit Test `ex4-observable` <<<
+2021-10-26 07:13:41 info: ------------------------------------------
+2021-10-26 07:13:43 info: All unit tests passed.
+2021-10-26 07:13:46 info: All steps were completed successfully
+2021-10-26 07:13:57 info: --------------------------------------
+2021-10-26 07:13:57 info: >>> Running Unit Test `ex5-wallet` <<<
+2021-10-26 07:13:57 info: --------------------------------------
+2021-10-26 07:13:59 error: *** Unit Test Error Report ***
+
+- wallet q1: At line 26, which variables are in the scope marked Closure?
+- wallet q2: What is in the Call Stack, from top to bottom?
+- wallet q3: What tooltip appears when hovering over the third debug button?
+- wallet q4: What is displayed in the console?
+- wallet q5: The owner of the wallet with insufficient funds is:
+
+2021-10-26 07:17:28 info: --------------------------------------
+2021-10-26 07:17:28 info: >>> Running Unit Test `ex5-wallet` <<<
+2021-10-26 07:17:28 info: --------------------------------------
+2021-10-26 07:17:30 info: All unit tests passed.
+2021-10-26 07:17:33 info: All steps were completed successfully
