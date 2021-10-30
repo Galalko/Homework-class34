@@ -10,17 +10,14 @@ Let's rewrite it (or _refactor_ it, as experienced developers would call it):
 `doubleEvenNumbers`.
 ------------------------------------------------------------------------------*/
 
-function doubleEvenNumbers (numbers){
+function doubleEvenNumbers(numbers) {
   const newNumbers = numbers
-  .filter(newNumber=> newNumber % 2 ===0  )
-  .map(newNumber=> newNumber*2 
-
-  ) ;
-  return newNumbers
+    .filter((newNumber) => newNumber % 2 === 0)
+    .map((newNumber) => newNumber * 2);
+  return newNumbers;
 }
-const theNumbers =[1, 2, 3, 4]
-console.log( doubleEvenNumbers(theNumbers))
-
+const theNumbers = [1, 2, 3, 4];
+console.log(doubleEvenNumbers(theNumbers));
 
 // ! Unit test (using Jest)
 test('doubleEvenNumbers should take the even numbers and double them', () => {

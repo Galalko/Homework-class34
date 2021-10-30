@@ -26,22 +26,20 @@ const fruitBasket = [
 ];
 
 // ! Function under test
-function sanitizeFruitBasket(array , out) {
-    const lemonOut = array.filter( fruit=> fruit !==out  );
-    return lemonOut
-
+function sanitizeFruitBasket(array, out) {
+  const basketOut = array.filter((fruit) => fruit !== out);
+  return basketOut;
 }
 
-
-
-
 test('fruit list should remove the allergic items ', () => {
-  const actual =  `the fruit list is ${sanitizeFruitBasket(fruitBasket , 'lemon')}`
-  const expected =  'the fruit list is apple,grapefruit,banana,watermelon'
+  const actual = `the fruit list is ${sanitizeFruitBasket(
+    fruitBasket,
+    'lemon'
+  )}`;
+  const expected = 'the fruit list is apple,grapefruit,banana,watermelon';
   expect(actual).toBe(expected);
-    });
+});
 
-  test('should return a new array that does not include the unwanted `lemon`', () => {
-        expect(true).toBe(true);
-  });
-
+test('should return a new array that does not include the unwanted `lemon`', () => {
+  expect(true).toBe(true);
+});

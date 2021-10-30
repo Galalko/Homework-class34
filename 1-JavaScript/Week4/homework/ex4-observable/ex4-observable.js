@@ -23,9 +23,9 @@ function createObservable() {
     },
     notify: function (message) {
       // TODO complete this function
-     return subscribers.forEach(el => el(message))
+     return subscribers.forEach(subscriber  => subscriber (message))
     },
-  };
+  }; 
 }
 
 // ! Do not change or remove the code below
