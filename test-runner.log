@@ -167,3 +167,79 @@ ex3-tellFortune.js:35:55 - Unknown word (faozya)
 2021-10-18 10:00:35 info: -------------------------------------------
 2021-10-18 10:00:35 warn: A unit test file was not provided.
 2021-10-18 10:00:46 info: All steps were completed successfully
+2021-10-30 03:26:44 info: ----------------------------------------------
+2021-10-30 03:26:44 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-10-30 03:26:44 info: ----------------------------------------------
+2021-10-30 03:26:46 info: All unit tests passed.
+2021-10-30 03:26:48 info: All steps were completed successfully
+2021-10-30 03:26:55 info: ----------------------------------------------
+2021-10-30 03:26:55 info: >>> Running Unit Test `ex1-giveCompliment` <<<
+2021-10-30 03:26:55 info: ----------------------------------------------
+2021-10-30 03:26:58 info: All unit tests passed.
+2021-10-30 03:27:00 info: All steps were completed successfully
+2021-10-30 03:27:09 info: ----------------------------------------
+2021-10-30 03:27:09 info: >>> Running Unit Test `ex2-dogYears` <<<
+2021-10-30 03:27:09 info: ----------------------------------------
+2021-10-30 03:27:12 info: All unit tests passed.
+2021-10-30 03:27:14 info: All steps were completed successfully
+2021-10-30 03:27:23 info: -------------------------------------------
+2021-10-30 03:27:23 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-10-30 03:27:23 info: -------------------------------------------
+2021-10-30 03:27:25 info: All unit tests passed.
+2021-10-30 03:27:28 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:35:24 - Unknown word (Alaa)
+ex3-tellFortune.js:35:32 - Unknown word (soad)
+ex3-tellFortune.js:35:40 - Unknown word (fathea)
+ex3-tellFortune.js:35:50 - Unknown word (nagat)
+ex3-tellFortune.js:35:59 - Unknown word (faozya)
+
+2021-10-30 03:28:38 info: -------------------------------------------
+2021-10-30 03:28:38 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-10-30 03:28:38 info: -------------------------------------------
+2021-10-30 03:28:41 info: All unit tests passed.
+2021-10-30 03:28:43 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:35:24 - Unknown word (Alaa)
+ex3-tellFortune.js:35:32 - Unknown word (soad)
+ex3-tellFortune.js:35:40 - Unknown word (fathea)
+ex3-tellFortune.js:35:50 - Unknown word (nagat)
+ex3-tellFortune.js:35:59 - Unknown word (faozya)
+
+2021-10-30 03:28:53 info: --------------------------------------------
+2021-10-30 03:28:53 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-10-30 03:28:53 info: --------------------------------------------
+2021-10-30 03:28:53 warn: A unit test file was not provided.
+2021-10-30 03:28:55 info: All steps were completed successfully
+2021-10-30 03:29:32 info: -------------------------------------------
+2021-10-30 03:29:32 info: >>> Running Unit Test `ex3-tellFortune` <<<
+2021-10-30 03:29:32 info: -------------------------------------------
+2021-10-30 03:29:35 info: All unit tests passed.
+2021-10-30 03:29:37 error: *** Spell Checker Report ***
+
+ex3-tellFortune.js:35:24 - Unknown word (Alaa)
+ex3-tellFortune.js:35:32 - Unknown word (soad)
+ex3-tellFortune.js:35:40 - Unknown word (fathea)
+ex3-tellFortune.js:35:50 - Unknown word (nagat)
+ex3-tellFortune.js:35:59 - Unknown word (faozya)
+
+2021-10-30 03:29:52 info: --------------------------------------------
+2021-10-30 03:29:52 info: >>> Running Unit Test `ex4-shoppingCart` <<<
+2021-10-30 03:29:52 info: --------------------------------------------
+2021-10-30 03:29:52 warn: A unit test file was not provided.
+2021-10-30 03:29:54 info: All steps were completed successfully
+2021-10-30 03:30:05 info: ------------------------------------------------
+2021-10-30 03:30:05 info: >>> Running Unit Test `ex5-shoppingCartPure` <<<
+2021-10-30 03:30:05 info: ------------------------------------------------
+2021-10-30 03:30:05 warn: A unit test file was not provided.
+2021-10-30 03:30:07 info: All steps were completed successfully
+2021-10-30 03:30:19 info: -----------------------------------------
+2021-10-30 03:30:19 info: >>> Running Unit Test `ex6-totalCost` <<<
+2021-10-30 03:30:19 info: -----------------------------------------
+2021-10-30 03:30:19 warn: A unit test file was not provided.
+2021-10-30 03:30:21 info: All steps were completed successfully
+2021-10-30 03:30:29 info: -------------------------------------------
+2021-10-30 03:30:29 info: >>> Running Unit Test `ex7-mindPrivacy` <<<
+2021-10-30 03:30:29 info: -------------------------------------------
+2021-10-30 03:30:29 warn: A unit test file was not provided.
+2021-10-30 03:30:31 info: All steps were completed successfully
