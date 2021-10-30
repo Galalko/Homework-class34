@@ -24,15 +24,15 @@ const shoppingCart = ['bananas', 'milk'];
 
 // ! Function to be tested
 function addToShoppingCart(groceryItem) {
-  shoppingCart.push(groceryItem) ;
-  if (shoppingCart.length>3) {
+  shoppingCart.push(groceryItem);
+  if (shoppingCart.length > 3) {
     shoppingCart.shift();
   }
   const result = `You bought${groceryItem}!`;
   return result;
-  }
-  addToShoppingCart('chocolate');
-  addToShoppingCart('waffles');
+}
+addToShoppingCart('chocolate');
+addToShoppingCart('waffles');
 
 // ! Test functions (plain vanilla JavaScript)
 function test1() {

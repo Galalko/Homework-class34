@@ -20,22 +20,25 @@ instead!
 
 3. Complete the unit test functions and verify that all is working as expected.
 -----------------------------------------------------------------------------*/
-const cartForParty = {cola : 2 , chocolate :1.5 , banana :1.25 , apple:1.75 , pasta : 3 };
+const cartForParty = {
+  cola: 2,
+  chocolate: 1.5,
+  banana: 1.25,
+  apple: 1.75,
+  pasta: 3,
+};
 
-function calculateTotalPrice(objectList) { 
-  const numbers = Object.values(objectList) ;
- 
+function calculateTotalPrice(objectList) {
+  const numbers = Object.values(objectList);
+
   let sum = 0;
 
-  for(let i=0; i < numbers.length; i++){
-
+  for (let i = 0; i < numbers.length; i++) {
     sum += numbers[i];
+  }
+  const message = `Total: ${sum}`;
 
-}
-const message=`Total: ${sum}`
-
- 
-return message  ;
+  return message;
 }
 
 function test1() {
@@ -51,10 +54,8 @@ function test2() {
   // TODO replace this comment with your code
   const expected = 'Total: 9.5';
   const actual = calculateTotalPrice(cartForParty);
-  console.assert(actual === expected)
+  console.assert(actual === expected);
 }
-
-
 
 function test() {
   test1();

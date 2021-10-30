@@ -32,13 +32,12 @@ const employeeRecords = [
 // ! Function under test
 function filterPrivateData(employeeRecords) {
   // TODO complete this function
-  const newRecords=[];
-  for (let i=0;i<employeeRecords.length;i++){
-    const {name,occupation,email}=employeeRecords[i];
-newRecords.push({name,occupation,email});
+  const newRecords = [];
+  for (let i = 0; i < employeeRecords.length; i++) {
+    const { name, occupation, email } = employeeRecords[i];
+    newRecords.push({ name, occupation, email });
   }
   return newRecords;
-  
 }
 
 // ! Test functions (plain vanilla JavaScript)

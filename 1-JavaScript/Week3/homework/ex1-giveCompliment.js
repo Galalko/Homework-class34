@@ -2,7 +2,7 @@
 /* -----------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-JavaScript/Week3#exercise-1-you-are-amazing
 
-1. Complete the function named giveComplimentas follows:
+1. Complete the function named give Compliments follows:
 
    - It should take a single parameter: name.
    - Its function body should include a variable that holds an array,
@@ -19,12 +19,23 @@ Full description at: https://github.com/HackYourFuture/Homework/tree/main/1-Java
    giveCompliment function to the console.
 -----------------------------------------------------------------------------*/
 function giveCompliment(myName) {
-const compliments=['amazing','awesome','perfect','good job','excellent','genius ' ,'super','incredible','unbelievable ','fantastic','great job'];
-const compliment = compliments[Math.floor(Math.random() * compliments.length)];
-const result = `You are ${compliment}, ${myName}!`;
-return result;
+  const compliments = [
+    'amazing',
+    'awesome',
+    'perfect',
+    'good job',
+    'excellent',
+    'genius',
+    'super',
+    'incredible',
+    'unbelievable',
+    'fantastic',
+  ];
+  const compliment =
+    compliments[Math.floor(Math.random() * compliments.length)];
+  const result = `You are ${compliment}, ${myName}!`;
+  return result;
 }
-
 
 const myName = 'ahmed';
 
