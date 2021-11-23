@@ -38,3 +38,9 @@ rollTheDices()
 
 // ! Do not change or remove the code below
 module.exports = rollTheDices;
+
+/*  
+ because promise.all needs to get response from each promise in the array,
+ and at the case of rejection of one of the promises , it returns rejection .
+ but if all promises are resolved , the result will be resolved .
+ */
