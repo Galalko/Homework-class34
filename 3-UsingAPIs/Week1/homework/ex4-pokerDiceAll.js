@@ -27,9 +27,9 @@ exercise file.
 const rollDice = require('../../helpers/pokerDiceRoller');
 
 function rollTheDices() {
-  // TODO Refactor this function
   const dices = [1, 2, 3, 4, 5];
-  return rollDice(1);
+  const mapingItems = dices.map((element) => rollDice(element));
+  return Promise.all(mapingItems);
 }
 
 rollTheDices()

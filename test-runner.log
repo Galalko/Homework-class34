@@ -6845,3 +6845,291 @@ ex3-rollDice.js
 2021-11-22 12:00:20 info: ----------------------------------------
 2021-11-22 12:00:23 info: All unit tests passed.
 2021-11-22 12:00:25 info: All steps were completed successfully
+2021-11-23 12:23:34 info: --------------------------------------------
+2021-11-23 12:23:34 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:23:34 info: --------------------------------------------
+2021-11-23 12:24:03 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex4-pokerDiceAll.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js (5.432 s)
+  ex4-pokerDiceAll
+    × should exist and be executable (2 ms)
+    √ should have all TODO comments removed (1 ms)
+    × should use `dices.map()`
+    × should use `Promise.all()` (1 ms)
+    × should resolve when all dices settle successfully (7 ms)
+    × should reject with an Error when a dice rolls off the table
+
+  ● ex4-pokerDiceAll › should exist and be executable
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      31 |
+      32 |   test('should exist and be executable', () => {
+    > 33 |     expect(exported).toBeDefined();
+         |                      ^
+      34 |   });
+      35 |
+      36 |   test('should have all TODO comments removed', () => checkTodos(source));
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:33:22)
+
+  ● ex4-pokerDiceAll › should use `dices.map()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      37 |
+      38 |   test('should use `dices.map()`', () => {
+    > 39 |     expect(state.dicesMap).toBeDefined();
+         |                            ^
+      40 |   });
+      41 |
+      42 |   test('should use `Promise.all()`', () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:39:28)
+
+  ● ex4-pokerDiceAll › should use `Promise.all()`
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      41 |
+      42 |   test('should use `Promise.all()`', () => {
+    > 43 |     expect(state.promiseAll).toBeDefined();
+         |                              ^
+      44 |   });
+      45 |
+      46 |   test('should resolve when all dices settle successfully', async () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:43:30)
+
+  ● ex4-pokerDiceAll › should resolve when all dices settle successfully
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      46 |   test('should resolve when all dices settle successfully', async () => {
+      47 |     expect.assertions(4);
+    > 48 |     expect(exported).toBeDefined();
+         |                      ^
+      49 |
+      50 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+      51 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:48:22)
+
+  ● ex4-pokerDiceAll › should resolve when all dices settle successfully
+
+    expect.assertions(4)
+
+    Expected four assertions to be called but received one assertion call.
+
+      45 |
+      46 |   test('should resolve when all dices settle successfully', async () => {
+    > 47 |     expect.assertions(4);
+         |            ^
+      48 |     expect(exported).toBeDefined();
+      49 |
+      50 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:47:12)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a dice rolls off the table
+
+    expect(received).toBeDefined()
+
+    Received: undefined
+
+      69 |   test('should reject with an Error when a dice rolls off the table', async () => {
+      70 |     expect.assertions(3);
+    > 71 |     expect(exported).toBeDefined();
+         |                      ^
+      72 |
+      73 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+      74 |     const randomSpy = jest.spyOn(Math, 'random').mockReturnValue(0.999);
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:71:22)
+
+  ● ex4-pokerDiceAll › should reject with an Error when a dice rolls off the table
+
+    expect.assertions(3)
+
+    Expected three assertions to be called but received one assertion call.
+
+      68 |
+      69 |   test('should reject with an Error when a dice rolls off the table', async () => {
+    > 70 |     expect.assertions(3);
+         |            ^
+      71 |     expect(exported).toBeDefined();
+      72 |
+      73 |     const logSpy = jest.spyOn(console, 'log').mockImplementation();
+
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex4-pokerDiceAll.test.js:70:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       5 failed, 1 passed, 6 total
+Snapshots:   0 total
+Time:        17.45 s
+Ran all test suites matching /ex4-pokerDiceAll.test.js/i.
+
+2021-11-23 12:24:11 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:62  error  Parsing error: Unexpected token ;
+
+✖ 1 problem (1 error, 0 warnings)
+
+
+2021-11-23 12:25:04 info: --------------------------------------------
+2021-11-23 12:25:04 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:25:04 info: --------------------------------------------
+2021-11-23 12:25:07 info: All unit tests passed.
+2021-11-23 12:25:08 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:33  warning  Identifier 'Element' is not in camelCase  hyf/camelcase
+  32:3   warning  Remove commented-out code                 hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2021-11-23 12:26:22 info: --------------------------------------------
+2021-11-23 12:26:22 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:26:22 info: --------------------------------------------
+2021-11-23 12:26:25 info: All unit tests passed.
+2021-11-23 12:26:26 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  31:34  warning  Identifier 'Element' is not in camelCase  hyf/camelcase
+  33:3   warning  Remove commented-out code                 hyf/no-commented-out-code
+
+✖ 2 problems (0 errors, 2 warnings)
+
+
+2021-11-23 12:26:27 error: *** Spell Checker Report ***
+
+ex4-pokerDiceAll.js:31:9 - Unknown word (maping)
+ex4-pokerDiceAll.js:32:22 - Unknown word (maping)
+
+2021-11-23 12:26:39 info: --------------------------------------------
+2021-11-23 12:26:39 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:26:39 info: --------------------------------------------
+2021-11-23 12:26:42 info: All unit tests passed.
+2021-11-23 12:26:43 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  33:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-11-23 12:26:44 error: *** Spell Checker Report ***
+
+ex4-pokerDiceAll.js:31:9 - Unknown word (maping)
+ex4-pokerDiceAll.js:32:22 - Unknown word (maping)
+
+2021-11-23 12:27:30 info: --------------------------------------------
+2021-11-23 12:27:30 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:27:30 info: --------------------------------------------
+2021-11-23 12:27:33 info: All unit tests passed.
+2021-11-23 12:27:34 error: *** ESLint Report ***
+
+ex4-pokerDiceAll.js
+  33:3  warning  Remove commented-out code  hyf/no-commented-out-code
+
+✖ 1 problem (0 errors, 1 warning)
+
+
+2021-11-23 12:27:46 info: --------------------------------------------
+2021-11-23 12:27:46 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:27:46 info: --------------------------------------------
+2021-11-23 12:27:49 info: All unit tests passed.
+2021-11-23 12:27:52 info: All steps were completed successfully
+2021-11-23 12:30:42 info: --------------------------------------------
+2021-11-23 12:30:42 info: >>> Running Unit Test `ex4-pokerDiceAll` <<<
+2021-11-23 12:30:42 info: --------------------------------------------
+2021-11-23 12:30:45 info: All unit tests passed.
+2021-11-23 12:30:47 info: All steps were completed successfully
+2021-11-23 12:37:29 info: ----------------------------------------------
+2021-11-23 12:37:29 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2021-11-23 12:37:29 info: ----------------------------------------------
+2021-11-23 12:37:32 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (2 ms)
+    × should have all TODO comments removed (6 ms)
+    √ should resolve when all dices settle successfully (2 ms)
+    √ should reject with an Error when a dice rolls off the table (2 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      113 |
+      114 | function checkTodos(source) {
+    > 115 |   expect(source.includes('TODO')).toBeFalsy();
+          |                                   ^
+      116 | }
+      117 |
+      118 | module.exports = {
+
+      at checkTodos (test-runner/unit-test-helpers.js:115:35)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:19:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        1.517 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+
+2021-11-23 01:21:35 info: ----------------------------------------------
+2021-11-23 01:21:35 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2021-11-23 01:21:35 info: ----------------------------------------------
+2021-11-23 01:21:38 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex5-pokerDiceChain.test.js --colors
+ FAIL  3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js
+  ex5-pokerDiceChain
+    √ should exist and be executable (1 ms)
+    × should have all TODO comments removed (7 ms)
+    √ should resolve when all dices settle successfully (2 ms)
+    √ should reject with an Error when a dice rolls off the table (2 ms)
+
+  ● ex5-pokerDiceChain › should have all TODO comments removed
+
+    expect(received).toBeFalsy()
+
+    Received: true
+
+      113 |
+      114 | function checkTodos(source) {
+    > 115 |   expect(source.includes('TODO')).toBeFalsy();
+          |                                   ^
+      116 | }
+      117 |
+      118 | module.exports = {
+
+      at checkTodos (test-runner/unit-test-helpers.js:115:35)
+      at Object.<anonymous> (3-UsingAPIs/Week1/unit-tests/ex5-pokerDiceChain.test.js:19:55)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 3 passed, 4 total
+Snapshots:   0 total
+Time:        1.27 s
+Ran all test suites matching /ex5-pokerDiceChain.test.js/i.
+
+2021-11-23 01:21:53 info: ----------------------------------------------
+2021-11-23 01:21:53 info: >>> Running Unit Test `ex5-pokerDiceChain` <<<
+2021-11-23 01:21:53 info: ----------------------------------------------
+2021-11-23 01:21:56 info: All unit tests passed.
+2021-11-23 01:21:58 info: All steps were completed successfully
