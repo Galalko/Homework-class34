@@ -51,3 +51,6 @@ rollDice()
   });
 // ! Do not change or remove the code below
 module.exports = rollDice;
+//Answer
+// In the callback function case the error is called for every value but in the promise case we take the 
+//returned value which is a promise and resolve it or catch the error
