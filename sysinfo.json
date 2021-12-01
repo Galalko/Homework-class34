@@ -1,0 +1,53 @@
+{
+  "node": "v14.18.1",
+  "system": {
+    "manufacturer": "Acer",
+    "model": "Aspire VX5-591G"
+  },
+  "cpu": {
+    "manufacturer": "Intel®",
+    "brand": "Core™ i7-7700HQ",
+    "speed": 2.8
+  },
+  "memory": "16 GB",
+  "osInfo": {
+    "platform": "win32",
+    "distro": "Microsoft Windows 10 Home",
+    "release": "10.0.19043"
+  },
+  "vscodeInfo": {
+    "version": "1.62.3",
+    "extensions": [
+      "aaron-bond.better-comments",
+      "ajhyndman.jslint",
+      "bierner.github-markdown-preview",
+      "bierner.lit-html",
+      "bierner.markdown-checkbox",
+      "bierner.markdown-emoji",
+      "bierner.markdown-preview-github-styles",
+      "bierner.markdown-yaml-preamble",
+      "DavidAnson.vscode-markdownlint",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "esbenp.prettier-vscode",
+      "firsttris.vscode-jest-runner",
+      "idleberg.icon-fonts",
+      "ms-azuretools.vscode-docker",
+      "msjsdiag.debugger-for-chrome",
+      "octref.vetur",
+      "Orta.vscode-jest",
+      "PKief.material-icon-theme",
+      "ritwickdey.LiveServer",
+      "streetsidesoftware.code-spell-checker",
+      "VisualStudioExptTeam.vscodeintellicode",
+      "zhuangtongfa.material-theme"
+    ],
+    "userSettings": {
+      "workbench.colorTheme": "One Dark Pro",
+      "editor.suggestSelection": "first",
+      "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": true
+    }
+  }
+}

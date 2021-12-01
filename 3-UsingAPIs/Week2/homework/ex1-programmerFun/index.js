@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-1-programmer-fun
 
@@ -18,28 +19,30 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
    should result in a network (DNS) error.
 ------------------------------------------------------------------------------*/
 function requestData(url) {
-  // TODO return a promise using `fetch()`
+  return fetch(url).then((resp) => resp.json());
 }
 
 function renderImage(data) {
-  // TODO render the image to the DOM
+  const showData = document.createElement('img');
   console.log(data);
+  showData.alt = data.alt;
+  showData.src = data.img;
+  document.body.appendChild(showData);
 }
 
 function renderError(error) {
-  // TODO render the error to the DOM
-  console.log(error);
+  const fetchError = document.createElement('h1');
+  fetchError.textContent = error;
+  document.body.appendChild(fetchError);
 }
 
-// TODO refactor with async/await and try/catch
-function main() {
-  requestData('https://xkcd.now.sh/?comic=latest')
-    .then((data) => {
-      renderImage(data);
-    })
-    .catch((error) => {
-      renderError(error);
-    });
+async function main() {
+  try {
+    const data = await requestData('https://xkcd.now.sh/?comic=latest');
+    renderImage(data);
+  } catch (error) {
+    renderError(error);
+  }
 }
 
 window.addEventListener('load', main);

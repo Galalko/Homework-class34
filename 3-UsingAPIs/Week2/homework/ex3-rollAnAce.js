@@ -12,21 +12,22 @@ Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-Usin
 // ! Do not change or remove the next two lines
 const rollDice = require('../../helpers/pokerDiceRoller');
 
-function rollDiceUntil(wantedValue) {
-  // TODO: rewrite this function using async/await
-  return rollDice().then((value) => {
-    if (value !== wantedValue) {
-      return rollDiceUntil(wantedValue);
-    }
-    return value;
-  });
+async function rollDiceUntil(wantedValue) {
+  const resp = await rollDice();
+
+  if (resp !== wantedValue) {
+    return rollDiceUntil(wantedValue);
+  }
+  return resp;
 }
 
-// TODO refactor this function to use try/catch
-function main() {
-  rollDiceUntil('ACE')
-    .then((results) => console.log('Resolved!', results))
-    .catch((error) => console.log('Rejected!', error.message));
+async function main() {
+  try {
+    const resp = await rollDiceUntil('ACE');
+    console.log('Resolved!', resp);
+  } catch (error) {
+    console.log('Rejected!', error.message);
+  }
 }
 
 main();

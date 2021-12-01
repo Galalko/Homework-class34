@@ -1,4 +1,5 @@
 'use strict';
+
 /*------------------------------------------------------------------------------
 Full description at: https://github.com/HackYourFuture/Homework/blob/main/3-UsingAPIs/Week2/README.md#exercise-2-gotta-catch-em-all
 
@@ -22,18 +23,50 @@ Use async/await and try/catch to handle promises.
 Try and avoid using global variables. As much as possible, try and use function 
 parameters and return values to pass data back and forth.
 ------------------------------------------------------------------------------*/
-function fetchData(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+function fetchData() {
+  return fetch('https://pokeapi.co/api/v2/pokemon/').then((res) => res.json());
 }
 
-function fetchAndPopulatePokemons(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchAndPopulatePokemons() {
+  const selector = document.createElement('select');
+  const data = await fetchData();
+
+  data.results.forEach((el) => {
+    const option = document.createElement('option');
+    option.textContent = el.name;
+    selector.appendChild(option);
+  });
+  document.body.appendChild(selector);
+  fetchImage(selector);
 }
 
-function fetchImage(/* TODO parameter(s) go here */) {
-  // TODO complete this function
+async function fetchImage(selector) {
+  selector.addEventListener('change', async () => {
+    try {
+      const res = await fetch(
+        `https://pokeapi.co/api/v2/pokemon/${selector.value}`
+      );
+      const data = await res.json();
+      const element = document.getElementById('pok-img');
+      if (element) {
+        element.remove();
+      }
+      const pokImage = document.createElement('img');
+      pokImage.setAttribute('id', 'pok-img');
+      pokImage.src = data.sprites.front_default;
+      pokImage.alt = selector.value;
+      document.body.appendChild(pokImage);
+    } catch (error) {
+      throw new Error(error);
+    }
+  });
 }
 
 function main() {
-  // TODO complete this function
+  const button = document.createElement('button');
+  button.textContent = 'click pokemon';
+  button.setAttribute('type', 'submit');
+  document.body.appendChild(button);
+  button.addEventListener('click', fetchAndPopulatePokemons);
 }
+main();

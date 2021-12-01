@@ -1,0 +1,57 @@
+2021-12-01 05:17:06 info: ----------------------------------------
+2021-12-01 05:17:06 info: >>> Running Unit Test `ex5-vscDebug` <<<
+2021-12-01 05:17:06 info: ----------------------------------------
+2021-12-01 05:17:06 warn: A unit test file was not provided.
+2021-12-01 05:17:11 info: All steps were completed successfully
+2021-12-01 05:17:21 info: ---------------------------------------------
+2021-12-01 05:17:21 info: >>> Running Unit Test `ex1-programmerFun` <<<
+2021-12-01 05:17:21 info: ---------------------------------------------
+2021-12-01 05:17:27 info: All unit tests passed.
+2021-12-01 05:17:29 info: All steps were completed successfully
+2021-12-01 05:18:22 info: ------------------------------------------
+2021-12-01 05:18:22 info: >>> Running Unit Test `ex2-pokemonApp` <<<
+2021-12-01 05:18:22 info: ------------------------------------------
+2021-12-01 05:18:28 info: All unit tests passed.
+2021-12-01 05:18:30 info: All steps were completed successfully
+2021-12-01 05:18:45 info: -----------------------------------------
+2021-12-01 05:18:45 info: >>> Running Unit Test `ex3-rollAnAce` <<<
+2021-12-01 05:18:45 info: -----------------------------------------
+2021-12-01 05:18:48 error: *** Unit Test Error Report ***
+
+Command failed: npx jest ex3-rollAnAce.test.js --colors
+ FAIL  3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js
+  ex3-rollAnAce
+    √ should have all TODO comments removed (1 ms)
+    × should not include a recursive call (1 ms)
+    √ should use async/wait (1 ms)
+    √ should use try/catch
+    √ should resolve as soon as a dice settles on an ACE (2 ms)
+    √ should reject with an Error when a dice rolls off the table (1 ms)
+
+  ● ex3-rollAnAce › should not include a recursive call
+
+    expect(received).toBeUndefined()
+
+    Received: true
+
+      50 |
+      51 |   test('should not include a recursive call', () => {
+    > 52 |     expect(state.recursive).toBeUndefined();
+         |                             ^
+      53 |   });
+      54 |
+      55 |   test('should use async/wait', () => {
+
+      at Object.<anonymous> (3-UsingAPIs/Week2/unit-tests/ex3-rollAnAce.test.js:52:29)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 5 passed, 6 total
+Snapshots:   0 total
+Time:        1.326 s, estimated 3 s
+Ran all test suites matching /ex3-rollAnAce.test.js/i.
+
+2021-12-01 05:19:07 info: ----------------------------------------
+2021-12-01 05:19:07 info: >>> Running Unit Test `ex4-diceRace` <<<
+2021-12-01 05:19:07 info: ----------------------------------------
+2021-12-01 05:19:10 info: All unit tests passed.
+2021-12-01 05:19:12 info: All steps were completed successfully
